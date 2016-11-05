@@ -18,10 +18,16 @@ ini_set('display_errors', 1);
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" media="all" href="/main.css">
+    <link rel="stylesheet" media="all" href="/marguerite.css">
     <!-- <link rel="stylesheet" media="print" href="print.css"> -->
     <link rel="stylesheet" media="print" href="/ace.css">
 
-    <script src="/main.js"></script>
+    <script src="/js/jquery-1.12.4.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+
+    <script src="/js/command.js"></script>
+    <script src="/js/tree.js"></script>
+    <script src="/js/budget.js"></script>
 
     <style>
     [data-user-is] { display: none !important; }
@@ -57,6 +63,7 @@ ini_set('display_errors', 1);
     </div>
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/../src/page_end.php'); ?>
+
 
 </body>
 </html>
