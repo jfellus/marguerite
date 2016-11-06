@@ -71,25 +71,20 @@
 					</li>
 
 					<li class="visible-sm visible-xs">
-						<a title="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="https://promethe.u-cergy.fr/search">
+						<a title="Search" href="#">
 							<i class="fa fa-search"></i>
 						</a>
 					</li>
-					<li></li>
+
+					<li id="toolbuttons-placeholder"></li>
+
 					<li>
-						<a title="" data-toggle="tooltip" data-placement="bottom" data-container="body" href="https://promethe.u-cergy.fr/projects/new" data-original-title="New project">
-							<i class="fa fa-plus fa-fw"></i>
-						</a>
-					</li>
-					<li>
-						<a class="logout" title="" data-toggle="tooltip" data-placement="bottom" data-container="body" rel="nofollow" data-method="delete" href="https://promethe.u-cergy.fr/users/sign_out" data-original-title="Sign out">
-							<i class="fa fa-sign-out"></i>
-						</a>
+						<a class="logout" rel="nofollow" href="javascript:logout();"><i class="fa fa-sign-out"></i></a>
 					</li>
 				</ul>
 			</div>
 
-			<h1 class="title"><a href="https://promethe.u-cergy.fr/dashboard/activity"><?= ucfirst($PAGE) ?></a></h1>
+			<h1 class="title"><a href="/<?= $PAGE ?>"><?= ucfirst($PAGE) ?></a></h1>
 
 		</div>
 	</div>

@@ -67,3 +67,47 @@ table.tree .ui-draggable-dragging {
 table.tree .ui-being-dragged {
 	opacity:0.2;
 }
+
+
+.dialog {padding: 16px;display: none;}
+.ui-dialog {
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.ui-corner-all {}
+.ui-dialog-titlebar button {float:right;}
+.ui-dialog h3 { margin-top:0; }
+
+
+.ui-dialog-titlebar {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    color: white;
+    justify-content: center;
+}
+
+.ui-dialog-titlebar button {
+    position: absolute;
+    right: 6px;
+    border: none;
+    background: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    top: auto;
+    font-weight: normal;
+    color: white;
+}
+
+span.ui-button-icon.ui-icon.ui-icon-closethick {
+    display: none;
+}
+
+.ui-dialog table { width:auto; margin-left:auto; margin-right:auto; position:relative;}
+.ui-dialog table td {
+	padding:4px;
+}
+.ui-dialog table td:first-child { text-align:right; }

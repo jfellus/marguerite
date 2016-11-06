@@ -7,9 +7,8 @@ function toggle_fold(elt) {
 	var level = getLevel(elt);
 	var bFolded = $(elt).hasClass("folded");
 	$(elt).toggleClass('folded');
-	console.log(level);
 	for(var i = $(elt).next(); $(i).parent().get(0) == $(elt).parent().get(0) && getLevel(i) > level; i = $(i).next()) {
-	 	if(!bFolded) {
+		if(!bFolded) {
 			if(!$(i).hasClass("leaf")) $(i).addClass("folded");
 			$(i).hide();
 		}
@@ -20,22 +19,22 @@ function toggle_fold(elt) {
 
 
 
-$(function() {
+$$$(function() {
 	var c = {};
-  $( ".sortable.tree tr" ).draggable( {
-	  axis:'y',
-	  helper: "clone",
-	  start: function(event, ui) {
-		  c.tr = this;
-		  $(c.tr).addClass("ui-being-dragged")
-		  c.helper = ui.helper;
-	  },
-	  stop: function(event, ui) {
-		  $(c.tr).removeClass("ui-being-dragged");
-	  }
-  }).droppable({
-	  drop: function( event, ui ) {
-		  ui.draggable.trigger("reparent", $(event.target));
-	  }
-  });
+	$( ".sortable.tree tr" ).draggable( {
+		axis:'y',
+		helper: "clone",
+		start: function(event, ui) {
+			c.tr = this;
+			$(c.tr).addClass("ui-being-dragged")
+			c.helper = ui.helper;
+		},
+		stop: function(event, ui) {
+			$(c.tr).removeClass("ui-being-dragged");
+		}
+	}).droppable({
+		drop: function( event, ui ) {
+			ui.draggable.trigger("reparent", $(event.target));
+		}
+	});
 });

@@ -21,10 +21,13 @@ ini_set('display_errors', 1);
     <link rel="stylesheet" media="all" href="/marguerite.css">
     <!-- <link rel="stylesheet" media="print" href="print.css"> -->
     <link rel="stylesheet" media="print" href="/ace.css">
+    <link rel="stylesheet" media="all" href="/css/jquery.contextMenu.min.css">
 
     <script src="/js/jquery-1.12.4.js"></script>
     <script src="/js/jquery-ui.js"></script>
+    <script src="/js/jquery.contextMenu.min.js"></script>
 
+    <script src="/js/main.js"></script>
     <script src="/js/command.js"></script>
     <script src="/js/tree.js"></script>
     <script src="/js/budget.js"></script>
@@ -52,7 +55,7 @@ ini_set('display_errors', 1);
 
             <div class="container-fluid">
                 <div class="content">
-                    <div class="clearfix">
+                    <div id="page" class="clearfix">
 
                          <?php include( $_SERVER['DOCUMENT_ROOT'] . '/../pages/'. $PAGE .'.php'); ?>
 

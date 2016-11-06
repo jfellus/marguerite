@@ -25,5 +25,19 @@ function db_budget_reparent($item, $parent) {
 	pg_query("UPDATE accounts SET parent='".$parent."' WHERE name='".$item."'");
 }
 
+function db_budget_create($item, $parent) {
+	pg_query("INSERT INTO accounts (name, parent) VALUES ('".$item."','".$parent."')");
+}
+
+function db_budget_delete($item) {
+	$parent = db_budget_get_parent($item);
+	pg_query("UPDATE accounts SET parent='".$parent."' WHERE parent='".$item."'");
+	pg_query("DELETE FROM accounts WHERE name='".$item."'");
+}
+
+function db_budget_get_parent($item) {
+	$result = pg_query("SELECT parent FROM accounts WHERE name='".$item."'");
+	return pg_fetch_array($result, null, PGSQL_ASSOC)['parent'];
+}
 
  ?>

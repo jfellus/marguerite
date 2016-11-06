@@ -56,7 +56,7 @@
 		<a class="toggle-nav-collapse" title="Open/Close" href="#"><i class="fa fa-angle-left"></i></a>
 	</div>
 
-	<a class="sidebar-user" title="Profile" href="/utilisateurs?u=jfellus"><img alt="Profile" class="avatar avatar s36" src="./marguerite_files/e088639c921fd79b550def020b1c0128">
+	<a class="sidebar-user" title="Profile" href="/utilisateurs?u=jfellus"><img alt="Profile" class="avatar avatar s36" src="">
 		<div class="username">jfellus</div>
 	</a>
 </div>
