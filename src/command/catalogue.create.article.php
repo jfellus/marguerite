@@ -1,0 +1,11 @@
+<?php
+
+include('../src/db/catalogue.php');
+
+db_open();
+
+db_article_create($ARGS);
+
+echo "ok";
+
+?>

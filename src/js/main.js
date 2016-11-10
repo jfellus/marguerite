@@ -27,8 +27,8 @@ function logout() {
 function add_toolbutton(title, classes, callback) {
 	var elt = $(
 		'<li>'
-	+		'<a title="'+title+'" href="#">'
-	+			'<i class="fa '+classes+'"></i>'
+	+		'<a class="toolbutton" title="'+title+'" href="#">'
+	+			'<i class="fa '+classes+'"></i>&nbsp;' + title
 	+		'</a>'
 	+	'</li>');
 	elt.select("a").on("click", callback);

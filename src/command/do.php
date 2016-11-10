@@ -5,6 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $ARGS = $_GET;
-include($_SERVER['DOCUMENT_ROOT'] . '/../src/command/'. $_GET['cmd'] . '.php');
+$cmd = $ARGS['cmd']; unset($ARGS['cmd']);
+include($_SERVER['DOCUMENT_ROOT'] . '/../src/command/'. $cmd . '.php');
 
  ?>

@@ -8,5 +8,8 @@
 </div>
 
 <script>
-	$(function() { budget_reload(); });
+	$(function() {
+		budget_init();
+		budget_reload();
+	});
 </script>

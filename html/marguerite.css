@@ -18,6 +18,9 @@ table.tree > tbody > tr > td { cursor: pointer; }
 table.tree > tbody > tr:hover {
 	background: rgb(246, 248, 251);
 }
+table.tree > tbody > tr.articles:hover {
+	background: none
+}
 
 table.tree > tbody > tr > td > div {
 	display:flex;
@@ -40,7 +43,7 @@ tr.level_8 > td:first-child { padding-left:130px; }
 tr.level_9 > td:first-child { padding-left:140px; }
 tr.level_10 > td:first-child { padding-left:150px; }
 
-table.tree td:first-child { font-size: 120%; width:1px; padding-right: 100px; }
+table.tree td:first-child { font-size: 120%; padding-right: 100px; }
 table.tree td:not(:first-child) {color: #adadad;}
 
 span.unfold {
@@ -59,8 +62,6 @@ table.tree .ui-droppable-hover {
 }
 table.tree, table.tree > tbody { position:relative; }
 table.tree .ui-draggable-dragging {
-	/*background:#79a0cc;*/
-	left:0; right:0;
 	opacity:0.9;
 }
 
@@ -68,6 +69,8 @@ table.tree .ui-being-dragged {
 	opacity:0.2;
 }
 
+
+.toolbutton {background: #1d941d !important;border: 1px solid #0b840b;}
 
 .dialog {padding: 16px;display: none;}
 .ui-dialog {
@@ -111,3 +114,33 @@ span.ui-button-icon.ui-icon.ui-icon-closethick {
 	padding:4px;
 }
 .ui-dialog table td:first-child { text-align:right; }
+
+
+tr.article {
+    display: inline-block;
+    float: left;
+}
+
+
+li.article img {
+    width: 10vw;
+    height: auto;
+    min-height: 10vh;
+}
+
+li.article {
+    float: left;
+    text-align: center;
+}
+
+li.article:hover {
+    background: rgb(246, 248, 251);
+}
+
+.articles ul {
+    list-style-type: none;
+}
+
+table.tree tr.ui-draggable-dragging {
+	left:0; right:0;
+}

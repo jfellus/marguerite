@@ -19,10 +19,9 @@ function toggle_fold(elt) {
 
 
 
-$$$(function() {
+function make_reparentable(draggable_selector, droppable_selector) {
 	var c = {};
-	$( ".sortable.tree tr" ).draggable( {
-		axis:'y',
+	$(draggable_selector).draggable( {
 		helper: "clone",
 		start: function(event, ui) {
 			c.tr = this;
@@ -32,9 +31,11 @@ $$$(function() {
 		stop: function(event, ui) {
 			$(c.tr).removeClass("ui-being-dragged");
 		}
-	}).droppable({
+	});
+
+	$(droppable_selector).droppable({
 		drop: function( event, ui ) {
 			ui.draggable.trigger("reparent", $(event.target));
 		}
 	});
-});
+}

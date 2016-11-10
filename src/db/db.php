@@ -8,4 +8,23 @@ function db_open() {
 }
 
 
+function pg_insert_into($table, $params) {
+	$s = "INSERT INTO ".$table." (";
+	$first = 1;
+	foreach($params as $k=>$v) {
+		if(!$first) $s .= ", ";
+		$s .= $k;
+		$first = 0;
+	}
+	$s .= ') VALUES (';
+	$first = 1;
+	foreach($params as $k=>$v) {
+		if(!$first) $s .= ", ";
+		$s .= ("'".$v."'"); 
+		$first = 0;
+	}
+	$s .= ')';
+	return pg_query($s);
+}
+
  ?>

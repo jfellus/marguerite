@@ -17,37 +17,37 @@
 		</div>
 	</a></div>
 	<ul class="nav nav-sidebar">
-		<li class="home <?= $PAGE=='accueil' ? 'active' : '' ?>"><a title="Projects" href="/"><i class="fa fa-bookmark fa-fw"></i>
+		<li class="home <?= $PAGE=='accueil' ? 'active' : '' ?>"><a title="Accueil" href="/"><i class="fa fa-bookmark fa-fw"></i>
 			<span>Accueil</span>
 		</a></li>
 		<li class="separate-item"></li>
-		<li class=" <?= $PAGE=='messages' ? 'active' : '' ?>"><a title="Todos" href="/messages"><i class="fa fa-bell fa-fw"></i>
+		<li class=" <?= $PAGE=='messages' ? 'active' : '' ?>"><a title="Messages" href="/messages"><i class="fa fa-bell fa-fw"></i>
 			<span>Messages<span class="count todos-pending-count">0</span></span>
 		</a></li>
-		<li class="<?= $PAGE=='commandes' ? 'active' : '' ?>"><a title="Issues" class="shortcuts-issues" href="/commandes"><i class="fa fa-exclamation-circle fa-fw"></i>
+		<li class="<?= $PAGE=='commandes' ? 'active' : '' ?>"><a title="Commandes" class="shortcuts-issues" href="/commandes"><i class="fa fa-exclamation-circle fa-fw"></i>
 			<span>Commandes<span class="count">14</span></span>
 		</a></li>
-		<li class="<?= $PAGE=='catalogue' ? 'active' : '' ?>"><a title="Merge Requests" class="shortcuts-merge_requests" href="/catalogue"><i class="fa fa-tasks fa-fw"></i>
+		<li class="<?= $PAGE=='catalogue' ? 'active' : '' ?>"><a title="Catalogue" class="shortcuts-merge_requests" href="/catalogue"><i class="fa fa-tasks fa-fw"></i>
 			<span>Catalogue<span class="count">0</span></span>
 		</a></li>
-		<li class="<?= $PAGE=='livraison' ? 'active' : '' ?>"><a title="Snippets" href="/livraison"><i class="fa fa-clipboard fa-fw"></i>
+		<li class="<?= $PAGE=='livraison' ? 'active' : '' ?>"><a title="Livraison" href="/livraison"><i class="fa fa-clipboard fa-fw"></i>
 			<span>Livraison</span>
 		</a></li>
-		<li class="<?= $PAGE=='suivi' ? 'active' : '' ?>"><a title="Help" href="/suivi"><i class="fa fa-question-circle fa-fw"></i>
+		<li class="<?= $PAGE=='suivi' ? 'active' : '' ?>"><a title="Suivi" href="/suivi"><i class="fa fa-question-circle fa-fw"></i>
 			<span>Suivi</span>
 		</a></li>
 		<li class="separate-item"></li>
-		<li class="<?= $PAGE=='historique' ? 'active' : '' ?>"><a title="Milestones" href="/historique"><i class="fa fa-clock-o fa-fw"></i>
+		<li class="<?= $PAGE=='historique' ? 'active' : '' ?>"><a title="Historique" href="/historique"><i class="fa fa-clock-o fa-fw"></i>
 			<span>Historique</span>
 		</a></li>
-		<li class="<?= $PAGE=='budget' ? 'active' : '' ?>"><a class="shortcuts-activity" title="Activity" href="/budget"><i class="fa fa-dashboard fa-fw"></i>
+		<li class="<?= $PAGE=='budget' ? 'active' : '' ?>"><a class="shortcuts-activity" title="Budget" href="/budget"><i class="fa fa-dashboard fa-fw"></i>
 			<span>Budget</span>
 		</a></li>
-		<li class="<?= $PAGE=='utilisateurs' ? 'active' : '' ?>"><a title="Groups" href="/utilisateurs"><i class="fa fa-group fa-fw"></i>
+		<li class="<?= $PAGE=='utilisateurs' ? 'active' : '' ?>"><a title="Utilisateurs" href="/utilisateurs"><i class="fa fa-group fa-fw"></i>
 			<span>Utilisateurs</span>
 		</a></li>
 		<li class="separate-item"></li>
-		<li class="<?= $PAGE=='mon-profil' ? 'active' : '' ?>"><a title="Profile Settings" data-placement="bottom" href="/mon-profil"><i class="fa fa-user fa-fw"></i>
+		<li class="<?= $PAGE=='mon-profil' ? 'active' : '' ?>"><a title="Mon profil" data-placement="bottom" href="/mon-profil"><i class="fa fa-user fa-fw"></i>
 			<span>Mon profil</span>
 		</a></li>
 	</ul>

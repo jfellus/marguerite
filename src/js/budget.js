@@ -10,6 +10,8 @@ function budget_reload() {
 function on_budget_load(res) {
 	$("#budget-tree").append(res);
 
+	make_reparentable($("#budget-tree tr"), $("#budget-tree tr"));
+
 	$("#budget-tree").find("tr").on('reparent', function(e, parent) {
 		var x = $(this.children[0]).text();
 		var p = $(parent.children[0]).text();
@@ -23,7 +25,7 @@ function on_budget_load(res) {
 
 
 // INIT
-$(function() {
+function budget_init() {
 
 	add_toolbutton("Ajouter un compte", "fa-plus", function() {
 		$("#budget-new-dialog").dialog({
@@ -64,4 +66,4 @@ $(function() {
 		   }
 	   });
    });
-});
+}

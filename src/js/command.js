@@ -3,7 +3,10 @@ function command(cmd, args, on_ok, on_error) {
 	$.ajax({
 		url:"/do.php",
 		data: args,
-		success: function(res) { on_ok(res); },
+		success: function(res) {
+			console.log(res);
+			on_ok(res);
+		},
 		error: function(res) { on_error(res); }
 	});
 }

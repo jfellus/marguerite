@@ -31,6 +31,8 @@ ini_set('display_errors', 1);
     <script src="/js/command.js"></script>
     <script src="/js/tree.js"></script>
     <script src="/js/budget.js"></script>
+    <script src="/js/catalogue.js"></script>
+    <script src="/js/commandes.js"></script>
 
     <style>
     [data-user-is] { display: none !important; }
